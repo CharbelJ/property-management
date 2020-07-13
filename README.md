@@ -60,12 +60,22 @@ You can also set this project using Docker, by following the steps in the follow
 
 To run the tests you should navigate to the root directory of the application.
 
-1. Run the database migrations.
+1. Copy the existing .env file to a new .env.testing file
+    ```
+    $ cp .env .env.testing
+    ```
+
+2. Modify the following field in your .env file to use the value specified
+   ```
+   DB_DATABASE=propertymanagementtesting
+   ```
+
+3. Run the database migrations.
    ```
    $ php artisan migrate --env=testing
    ```
 
-2. Run the tests
+4. Run the tests
     ```
     $ vendor/bin/phpunit
     ```
