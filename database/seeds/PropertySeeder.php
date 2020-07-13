@@ -20,7 +20,7 @@ class PropertySeeder extends Seeder
     {
         Log::info('Seeding property data started');
 
-        $file = storage_path('app/BackEndTest_TestData_v1.1.xlsx');
+        $file = storage_path('uploaded-data/BackEndTest_TestData_v1.1.xlsx');
 
         $properties = (new FastExcel())->sheet(1)->import($file);
 

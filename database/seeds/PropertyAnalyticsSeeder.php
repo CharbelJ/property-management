@@ -19,7 +19,7 @@ class PropertyAnalyticsSeeder extends Seeder
     {
         Log::info('Seeding property analytics data started');
 
-        $file = storage_path('app/BackEndTest_TestData_v1.1.xlsx');
+        $file = storage_path('uploaded-data/BackEndTest_TestData_v1.1.xlsx');
 
         $propertyAnalytics = (new FastExcel())->sheet(3)->import($file);
 

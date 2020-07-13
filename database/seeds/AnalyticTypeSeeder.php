@@ -19,7 +19,7 @@ class AnalyticTypeSeeder extends Seeder
     {
         Log::info('Seeding analytic type data started');
 
-        $file = storage_path('app/BackEndTest_TestData_v1.1.xlsx');
+        $file = storage_path('uploaded-data/BackEndTest_TestData_v1.1.xlsx');
 
         $analyticTypes = (new FastExcel())->sheet(2)->import($file);
 
