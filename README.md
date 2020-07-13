@@ -18,7 +18,7 @@ You can also set this project using Docker, by following the steps in the follow
 
 1. Open a new instance of the terminal and clone the repo.
     ```
-    $ git clone 
+    $ git clone https://github.com/CharbelJ/property-management.git
     ```
 
 2. Navigate to the root directory of the project 
